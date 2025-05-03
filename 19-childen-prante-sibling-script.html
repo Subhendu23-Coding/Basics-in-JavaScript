@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childen Perants Sibling</title>
+</head>
+<body>
+    <p id="Tech">Tecnical</p>
+    <p class="wellcome">Tecnical Tech 0</p>
+    <p class="wellcome">Tecnical Tech 1</p>
+    <p class="wellcome">Tecnical Tech 2</p>
+
+    <ul>
+        <li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li>
+    </ul>
+
+    <script>
+        var child = document.body.children;
+        console.log(child);
+
+
+        // add a new child in a body
+
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is a new para.");
+        para.appendChild(textNode);
+        console.log(para);
+
+
+        document.appendChild(para);
+
+        // acccess fristchild and lastchild?
+
+        var list = document.querySelector("ul");
+        console.log(list);
+
+        console.log(list.firstChild);
+        console.log(list.firstChild);
+
+        var FristSibling = Tech.nextElementSiblin.nextElementSiblin;
+        console.log(FristSibling);
+
+        console.log(list.parentNode);
+        
+        
+        
+
+
+        
+        
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children Parents Siblings</title> <!-- Spelling corrected -->
+</head>
+<body>
+    <p id="Tech">Technical</p>
+    <p class="wellcome">Technical Tech 0</p>
+    <p class="wellcome">Technical Tech 1</p>
+    <p class="wellcome">Technical Tech 2</p>
+
+    <ul>
+        <li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li>
+    </ul>
+
+    <script>
+        // Get all direct child elements of body
+        // body ke saare child elements ko print karega
+        var child = document.body.children;
+        console.log("Body ke children:", child);
+
+        // Create a new paragraph element
+        // Ek naya <p> element banaya ja raha hai
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is a new para.");
+        para.appendChild(textNode);
+
+        // New paragraph console me dikhayenge
+        console.log("New paragraph:", para);
+
+        // Append new paragraph to body
+        // Is naye paragraph ko body me add karenge
+        document.body.appendChild(para);
+
+        // Access first and last child element of the list
+        // UL list ka first aur last child element nikaalenge
+        var list = document.querySelector("ul");
+        console.log("UL element:", list);
+        console.log("First <li> element:", list.firstElementChild);  // Pehla LI
+        console.log("Last <li> element:", list.lastElementChild);    // Aakhri LI
+
+        // Access siblings of the first paragraph
+        // Tech paragraph ke siblings ko access karna
+        var tech = document.getElementById("Tech");
+        var firstSibling = tech.nextElementSibling; // Agla bhai (next sibling)
+        var secondSibling = firstSibling.nextElementSibling; // Uske baad wala
+        console.log("Second Sibling of #Tech:", secondSibling);
+
+        // Access parent of the ul element
+        // UL ke parent ko print karega (yani body)
+        console.log("Parent of UL:", list.parentNode);
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children Parents Siblings</title> <!-- Spelling corrected -->
+</head>
+<body>
+    <p id="Tech">Technical</p>
+    <p class="wellcome">Technical Tech 0</p>
+    <p class="wellcome">Technical Tech 1</p>
+    <p class="wellcome">Technical Tech 2</p>
+
+    <ul>
+        <li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li>
+    </ul>
+
+    <script>
+        // Body ke saare child elements ko print karega
+        var child = document.body.children;
+        console.log("Body ke children:", child);
+
+        // Ek naya <p> element banaya ja raha hai
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is a new para.");
+        para.appendChild(textNode);
+
+        // Naye paragraph ko console me dikhayenge
+        console.log("New paragraph:", para);
+
+        // Is naye paragraph ko body ke andar add karenge
+        document.body.appendChild(para);
+
+        // UL list ka pehla aur aakhri child element nikaalenge
+        var list = document.querySelector("ul");
+        console.log("UL element:", list);
+        console.log("First <li> element:", list.firstElementChild);  // Pehla LI
+        console.log("Last <li> element:", list.lastElementChild);    // Aakhri LI
+
+        // Tech paragraph ke siblings ko access karna
+        var tech = document.getElementById("Tech");
+        var firstSibling = tech.nextElementSibling; // Agla bhai (next sibling)
+        var secondSibling = firstSibling.nextElementSibling; // Uske baad wala sibling
+        console.log("Second Sibling of #Tech:", secondSibling);
+
+        // UL ke parent ko print karega (yani body)
+        console.log("Parent of UL:", list.parentNode);
+    </script>
+</body>
+</html>
+

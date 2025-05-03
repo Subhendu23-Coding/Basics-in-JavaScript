@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <p id="coding">Dom Coding Now</p>
+    <p class="wellcome">Wellcome Coding 1</p>
+    <p class="wellcome">Wellcome Coding 2</p>
+    <p class="wellcome">Wellcome Coding 3</p>
+    <p class="wellcome">Wellcome Coding 4</p>
+
+    <!-- how to access elements by ID -->
+
+    <script>
+        var a = document.getElementById("coding").innerHTML;
+        document.write(a);
+    </script>
+
+   <!-- how to access elements by class -->
+
+   <script>
+    // document.write("<br>");
+    var b = document.getElementsByClassName("wellcome")[0].innerHTML;
+    document.write("<br>" +b );
+   </script>
+   <!-- how to access elements by tagname -->
+   <script>
+    var tag = document.getElementsByTagName("p")
+    document.write("<br>"+tag);
+    console.log(tag);
+    
+   </script>
+
+      <!-- how to access Frist elements  -->
+
+      <script>
+        var p = document.querySelector('p').innerHTML;
+        document.write("<br>"+p);
+      </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <p id="coding">Dom Coding Now</p> <!-- Ye element id 'coding' ke saath -->
+    <p class="wellcome">Wellcome Coding 1</p>
+    <p class="wellcome">Wellcome Coding 2</p>
+    <p class="wellcome">Wellcome Coding 3</p>
+    <p class="wellcome">Wellcome Coding 4</p>
+
+    <!-- Accessing elements by ID -->
+
+    <script>
+        // 'getElementById' method se hum element ko uski ID se access karte hain
+        var a = document.getElementById("coding").innerHTML;
+        // ID 'coding' wale element ka inner HTML print karenge
+        document.write(a);  // Output: "Dom Coding Now"
+    </script>
+
+   <!-- Accessing elements by Class -->
+
+   <script>
+    // 'getElementsByClassName' method se hum class name ke through elements ko access karte hain
+    // Yahan, hum class 'wellcome' ka pehla element access kar rahe hain
+    var b = document.getElementsByClassName("wellcome")[0].innerHTML;
+    // First element (Wellcome Coding 1) ko print karenge
+    document.write("<br>" + b);  // Output: "Wellcome Coding 1"
+   </script>
+
+   <!-- Accessing elements by TagName -->
+
+   <script>
+    // 'getElementsByTagName' method se hum tag name ke through elements ko access karte hain
+    var tag = document.getElementsByTagName("p");
+    // Hum 'p' tag ke saare elements ko access kar rahe hain
+    document.write("<br>" + tag);  // Yeh ek HTMLCollection hai, jisme saare <p> elements hain
+    console.log(tag);  // Console me array-like collection ko print karenge
+   </script>
+
+   <!-- Accessing the First Element -->
+
+   <script>
+    // 'querySelector' method se hum pehla matching element ko access karte hain
+    var p = document.querySelector('p').innerHTML;
+    // Yeh pehla <p> element (id='coding') ko access karega
+    document.write("<br>" + p);  // Output: "Dom Coding Now"
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-obj</title>
+</head>
+<body>
+   <script>
+    var codingObj = "Wellcome to my channel and plz and keep loving and smiling";
+    document.write(codingObj.indexOf("and"));
+
+    document.write("<br>");
+
+    document.write(codingObj.lastIndexOf("and"));
+
+    document.write("<br>");
+
+    document.write(codingObj.replace("and", "&"));
+
+    document.write("<br>");
+    var love = "plz like share subcrribe my channel";
+    document.write(codingObj.concat("<br>"+ love));
+
+
+   </script> 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-obj</title>
+</head>
+<body>
+   <script>
+    // 'codingObj' ek string hai jisme hum kuch text store kar rahe hain
+    var codingObj = "Wellcome to my channel and plz and keep loving and smiling";
+    
+    // 'indexOf' function se hum first occurrence ki position find karte hain
+    // Yahan, "and" word ka pehla occurrence kaha hai, wo position print hoga
+    document.write(codingObj.indexOf("and"));  // Output: 22 (0-based index)
+
+    document.write("<br>");
+
+    // 'lastIndexOf' function se hum last occurrence ki position find karte hain
+    // Yahan, "and" ka last occurrence kaha hai, wo position print hoga
+    document.write(codingObj.lastIndexOf("and"));  // Output: 43
+
+    document.write("<br>");
+
+    // 'replace' function se hum string me kisi specific word ko replace kar sakte hain
+    // Yahan, "and" ko "&" se replace kar rahe hain
+    document.write(codingObj.replace("and", "&"));  // Output: "Wellcome to my channel & plz and keep loving and smiling"
+
+    document.write("<br>");
+    
+    // 'love' variable me ek aur string hai, aur 'concat' function se dono strings ko merge kar rahe hain
+    // Yahan, codingObj aur love ko combine karke ek nayi string create kar rahe hain
+    var love = "plz like share subscribe my channel";
+    document.write(codingObj.concat("<br>"+ love));  // Output: "Wellcome to my channel and plz and keep loving and smiling plz like share subscribe my channel"
+
+   </script> 
+</body>
+</html>

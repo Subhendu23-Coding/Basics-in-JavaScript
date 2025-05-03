@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body style="text-align: center;">
+    <h1>Enter Your Choice</h1>
+    <ul>
+        <li>Addition</li>
+        <li>Subtraction</li>
+        <li>Multiplication</li>
+    </ul>
+    <br>
+    <form>
+        <input type="text" name="" id="choice">
+        <br>
+        <br>
+        <button onclick="myfun()">Click Me</button>
+    </form>
+    <script>
+        function myfun(){
+            var choice = document.getElementById("choice").value;
+            switch(choice){
+                case "Addition" : var a = 10;
+                                  var b = 20;
+                                  var sum = a + b;
+                                  document.write("Additions of two number is " + sum);
+                                  break
+
+                case "Subtraction" : var a = 10;
+                                  var b = 20;
+                                  var sub = a % b;
+                                  document.write("Subtraction of two number is " + sub);
+                                  break
+                case "Multiplication" : var a = 10;
+                                  var b = 20;
+                                  var multi = a * b;
+                                  document.write("Multiplication of two number is " + multi);
+                                  break
+                default : alert("not a valid input");                  
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body style="text-align: center;">
+    <h1>Enter Your Choice</h1>
+
+    <!-- User ko bataya jaa raha hai kya kya options hain -->
+    <ul>
+        <li>Addition</li>
+        <li>Subtraction</li>
+        <li>Multiplication</li>
+    </ul>
+    <br>
+
+    <!-- Form banaya gaya input lene ke liye -->
+    <form onsubmit="return myfun()">
+        <input type="text" id="choice" placeholder="Enter your choice">
+        <br><br>
+        <button type="submit">Click Me</button> <!-- type=submit is important for form -->
+    </form>
+
+    <script>
+        function myfun() {
+            // User ka input le rahe hain
+            var choice = document.getElementById("choice").value;
+
+            // switch-case statement use kar rahe hain input ke according
+            switch (choice) {
+                case "Addition":
+                    var a = 10;
+                    var b = 20;
+                    var sum = a + b;
+                    document.write("Addition of two numbers is " + sum);
+                    break;
+
+                case "Subtraction":
+                    var a = 10;
+                    var b = 20;
+                    var sub = a - b;  // ✅ FIXED: Use - instead of % for subtraction
+                    document.write("Subtraction of two numbers is " + sub);
+                    break;
+
+                case "Multiplication":
+                    var a = 10;
+                    var b = 20;
+                    var multi = a * b;
+                    document.write("Multiplication of two numbers is " + multi);
+                    break;
+
+                // Agar user galat input de to yeh chalega
+                default:
+                    alert("Not a valid input. Please enter: Addition, Subtraction, or Multiplication.");
+            }
+
+            return false; // ✅ Prevents page from refreshing on form submit
+        }
+    </script>
+</body>
+</html>

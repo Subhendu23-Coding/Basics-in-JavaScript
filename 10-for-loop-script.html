@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loop</title>
+</head>
+<body>
+    <script>
+        var a;
+        for(a = 1; a <21; a++){
+            document.write(a);
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        let numbers = Array.from({length: 200}, (_, i) => i + 1);
+            for (let num of numbers) {
+                document.write(num + "<br>");
+            }
+
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loop</title>
+</head>
+<body>
+    <script>
+        // 🔁 Pehla for-loop: 1 se 20 tak numbers print karta hai
+        var a;
+        for(a = 1; a < 21; a++) {
+            document.write(a);         // number print karo
+            document.write("<br>");    // line break
+        }
+
+        document.write("<br>"); // ek line gap
+
+        // 🔁 Dusra for-of loop: 1 se 200 tak numbers print karta hai
+        // Array.from ka use karke 1 se 200 tak array banate hain
+        let numbers = Array.from({length: 200}, (_, i) => i + 1);
+
+        // Har number ko loop me le kar print karte hain
+        for (let num of numbers) {
+            document.write(num + "<br>");
+        }
+    </script>
+</body>
+</html> -->

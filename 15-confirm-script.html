@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conforam</title>
+</head>
+<body>
+    <!-- <script>
+        function myfun(){
+        var userconfirmatiom = confirm("Do you want to visit website");
+        if (userconfirmatiom == true) {
+            window.open("https://www.facebook.com/");
+            return true;
+        }else{
+            document.write("User doent want to visit the page");
+            return false;
+        }
+    }
+    </script>
+
+    <input type="button" name=""  onclick="myfun()" value="Click Me"> -->
+
+    <!-- ******************************************** -->
+
+ <!-- <input type="button" onclick="myfun()" value="Click Me">
+
+<script>
+    function myfun() {
+        var userConfirmation = confirm("Do you want to visit the website?");
+        if (userConfirmation) {
+            window.open("https://www.facebook.com/");
+        } else {
+            alert("You chose not to visit the website.");
+        }
+    }
+</script> -->
+
+
+<!-- ****************************************************** -->
+<!-- <input type="button" onclick="myfun()" value="Click Me">
+
+<script>
+    function myfun() {
+        var userConfirmation = confirm("Do you want to visit the website?");
+        if (userConfirmation) {
+            window.location.href = "https://www.facebook.com/";
+        } else {
+            alert("Okay, staying on this page.");
+        }
+    }
+</script> -->
+
+<!-- ************************************************ -->
+
+<input type="button" onclick="myfun()" value="Click Me">
+
+<script>
+    function myfun() {
+        var userConfirmation = confirm("Do you want to visit Facebook or twitter ?");
+        if (userConfirmation) {
+            var choice = prompt("Which site? Type '1' for Facebook, '2' for Twitter");
+            if (choice === "1") {
+                window.open("https://www.facebook.com/");
+            } else if (choice === "2") {
+                window.open("https://www.twitter.com/");
+            } else {
+                alert("Invalid choice.");
+            }
+        } else {
+            alert("You chose not to visit any site.");
+        }
+    }
+</script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conforam</title>
+</head>
+<body>
+
+    <!-- Ye button jab click hoga toh ek confirmation box open hoga -->
+    <input type="button" onclick="myfun()" value="Click Me">
+
+    <script>
+        // Ye function user se confirmation mangta hai
+        function myfun() {
+            var userConfirmation = confirm("Do you want to visit Facebook or Twitter?"); // Confirmation box show hoga
+            if (userConfirmation) {
+                // Agar user 'OK' click karega, toh prompt box show hoga
+                var choice = prompt("Which site? Type '1' for Facebook, '2' for Twitter");
+
+                // Agar user Facebook choose kare
+                if (choice === "1") {
+                    window.open("https://www.facebook.com/"); // Facebook open hoga
+                } 
+                // Agar user Twitter choose kare
+                else if (choice === "2") {
+                    window.open("https://www.twitter.com/"); // Twitter open hoga
+                } 
+                // Agar user koi aur input de
+                else {
+                    alert("Invalid choice."); // Invalid choice alert hoga
+                }
+            } else {
+                // Agar user 'Cancel' kare, toh ye message show hoga
+                alert("You chose not to visit any site."); // Message display hoga
+            }
+        }
+    </script>
+
+</body>
+</html>

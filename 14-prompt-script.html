@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <div id="greeting"></div>
+    <script>
+    var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            document.getElementById("greeting").innerHTML = "Nice to meet you, " + name + ".";
+        }
+     document.write("<br>");
+
+    /*****************************************/
+
+        var name = prompt(" What is Your Full Name");
+        if(name!=""){
+            document.write("Nice to meet you visit " +name,".");
+        }
+
+        document.write("<br>");
+
+        /*****************************************/
+
+
+        var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            document.write("Nice to meet you, " + name + ".");
+        } else {
+            document.write("You didn't enter your name.");
+        }
+        document.write("<br>");
+        /*****************************************/
+        
+        var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            alert("Nice to meet you, " + name + "!");
+        }
+        document.write("<br>");
+
+        /*****************************************/
+
+        function greetUser() {
+        var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            document.write("Nice to meet you, " + name + ".");
+        }
+    }
+    greetUser();
+    
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <div id="greeting"></div> <!-- Ye div hai jisme hum greeting show karenge -->
+    
+    <script>
+        // User se unka full name puchna
+        var name = prompt("What is your full name?");
+        // Agar user ne kuch name enter kiya ho
+        if (name && name.trim() !== "") {
+            // Greeting message show karna with the user's name
+            document.getElementById("greeting").innerHTML = "Nice to meet you, " + name + ".";
+        }
+
+        document.write("<br>"); // Line break for clarity
+
+        /*****************************************/
+
+        // Dusra method for name input and greeting
+        var name = prompt("What is Your Full Name?");
+        // Agar user ne name enter kiya
+        if(name != ""){
+            // Displaying greeting message
+            document.write("Nice to meet you, visit " + name + ".");
+        }
+
+        document.write("<br>"); // Line break for clarity
+
+        /*****************************************/
+
+        // Third method using conditional check for empty input
+        var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            // Agar user ne name enter kiya
+            document.write("Nice to meet you, " + name + ".");
+        } else {
+            // Agar user ne name nahi diya
+            document.write("You didn't enter your name.");
+        }
+        document.write("<br>");
+
+        /*****************************************/
+
+        // Using alert() to show greeting in a pop-up box
+        var name = prompt("What is your full name?");
+        if (name && name.trim() !== "") {
+            alert("Nice to meet you, " + name + "!");  // Greeting in alert box
+        }
+        document.write("<br>");
+
+        /*****************************************/
+
+        // Function to greet user after name input
+        function greetUser() {
+            var name = prompt("What is your full name?");
+            // Agar user ne name diya hai
+            if (name && name.trim() !== "") {
+                document.write("Nice to meet you, " + name + "."); // Greeting show karna
+            }
+        }
+
+        // Function ko call kar rahe hain
+        greetUser();
+    </script>
+</body>
+</html>

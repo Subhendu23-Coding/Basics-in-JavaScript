@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        var array = ["subhendu", "majhi", "coding"];
+        var langth = array.length;
+        // alert(langth);
+        // document.write(langth);
+/*********************************/
+        document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.sort();
+        document.write(array);
+/*********************************/
+        document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.pop();
+        document.write(array);
+/*********************************/
+        document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.push();
+        document.write(array)
+
+/*********************************/        
+        document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.shift();
+        document.write(array)
+
+ /*********************************/        
+        document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.unshift("Google");
+        document.write(array); 
+        
+ /*********************************/        
+         document.write("<br>")
+
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.reverse();
+        document.write(array);
+
+         /*********************************/        
+         document.write("<br>")
+
+        // var array = ["subhendu", "majhi", "coding", "2023"];
+        var array = 1;
+        var check = Array.isArray(array);
+        document.write(check);
+
+        /**********************************************/
+        document.write("<br>");
+
+        var array = ["AAA", "BBB", "CCC"];
+        var check = ["AAA", "BBB", "CCC"];
+
+        document.write(array.concat(check));
+
+                /**********************************************/
+                document.write("<br>");
+
+                var array = ["AAA", "BBB", "CCC"];
+                var check = ["Google", "AAA", "BBB", "CCC"];
+
+                document.write(array.indexof("BBB"));
+
+                /**********************************************/
+                document.write("<br>");
+
+                var array = ["AAA", "BBB", "CCC"];
+                var check = ["Google", "AAA", "BBB", "CCC"];
+
+                document.write(check.indexof("BBB"));
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        // Initial array with 3 elements
+        var array = ["subhendu", "majhi", "coding"];
+        var length = array.length;  // Array ki length calculate kar rahe hain
+        // alert(length); // Array ki length ko alert karne ke liye
+        // document.write(length); // Array ki length ko screen par print karne ke liye
+        
+        document.write("<br>");
+
+        /****************** Sorting array (alphabetically) ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.sort();  // Array ko alphabetically sort kar raha hain
+        document.write(array);  // Sorted array ko screen par display karna
+
+        document.write("<br>");
+
+        /****************** Removing last element using pop() ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.pop();  // Array se last element (2023) ko remove kar rahe hain
+        document.write(array);  // Displaying the array after pop
+
+        document.write("<br>");
+
+        /****************** Adding an element at the end using push() ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.push("new_element");  // Array ke end mein 'new_element' add kar rahe hain
+        document.write(array);  // Displaying the array after push
+
+        document.write("<br>");
+
+        /****************** Removing the first element using shift() ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.shift();  // Array se pehla element ('subhendu') remove ho gaya hai
+        document.write(array);  // Displaying the array after shift
+
+        document.write("<br>");
+
+        /****************** Adding an element at the beginning using unshift() ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.unshift("Google");  // Array ke starting mein 'Google' add kar rahe hain
+        document.write(array);  // Displaying the array after unshift
+
+        document.write("<br>");
+
+        /****************** Reversing the array using reverse() ******************/
+        var array = ["subhendu", "majhi", "coding", "2023"];
+        array.reverse();  // Array ko reverse kar raha hain
+        document.write(array);  // Displaying the reversed array
+
+        document.write("<br>");
+
+        /****************** Checking if a variable is an array using Array.isArray() ******************/
+        var array = 1;  // This is not an array, it's a number
+        var check = Array.isArray(array);  // Checking if the variable 'array' is an array (returns false)
+        document.write(check);  // Displaying the result (false)
+
+        document.write("<br>");
+
+        /****************** Concatenating two arrays using concat() ******************/
+        var array = ["AAA", "BBB", "CCC"];
+        var check = ["AAA", "BBB", "CCC"];
+        document.write(array.concat(check));  // Merging two arrays using concat() method
+
+        document.write("<br>");
+
+        /****************** Finding the index of an element using indexOf() ******************/
+        var array = ["AAA", "BBB", "CCC"];
+        document.write(array.indexOf("BBB"));  // Finding index of "BBB" in 'array' (returns 1)
+
+        document.write("<br>");
+
+        /****************** Correcting indexof() to indexOf() ******************/
+        var array = ["AAA", "BBB", "CCC"];
+        document.write(array.indexOf("BBB"));  // Correct usage of indexOf() (case-sensitive)
+
+    </script>
+</body>
+</html>
+
+
+<!-- Array Methods:
+
+sort(): Sorts the array elements in ascending order (alphabetically).
+
+pop(): Removes the last element of the array.
+
+push(): Adds a new element to the end of the array.
+
+shift(): Removes the first element of the array.
+
+unshift(): Adds a new element at the beginning of the array.
+
+reverse(): Reverses the order of elements in the array.
+
+Array.isArray(): Checks whether the variable is an array (returns true or false).
+
+concat(): Merges two or more arrays into a single array.
+
+indexOf(): Finds the index of a specified element in the array (returns -1 if not found). -->

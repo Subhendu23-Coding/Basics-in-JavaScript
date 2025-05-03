@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-print-page</title>
+</head>
+<body>
+    <div id="divone">
+        Div one content is here First,
+        <button onclick="myfun('divone')">DivOne</button>
+    </div>
+    <div id="divtwo">
+        Div two content is here Second,
+        <button onclick="myfun('divtwo')">DivTwo</button>
+    </div>
+    <div id="divthree">
+        Div three content is here Third,
+        <button onclick="myfun('divthree')">DivThree</button>
+    </div>
+
+    <button onclick="mywholepage()">WholePage</button>
+
+    <script>
+        function mywholepage() {
+            window.print(); 
+        }
+
+        function myfun(paravalue) {
+            var backup = document.body.innerHTML;
+            var divcontent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = divcontent;
+            window.print();
+            document.body.innerHTML = backup;
+        }
+    </script>
+</body>
+</html>
+<hr>*******************************<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-print</title>
+</head>
+<body>
+    <!-- Yeh pehla div hai jisme button hai jo sirf is div ka content print karega -->
+    <div id="divone">
+        Div one content is here First,
+        <button onclick="myfun('divone')">DivOne</button>
+    </div>
+
+    <!-- Dusra div, isme bhi ek button hai jo sirf is div ka content print karega -->
+    <div id="divtwo">
+        Div two content is here Second,
+        <button onclick="myfun('divtwo')">DivTwo</button>
+    </div>
+
+    <!-- Teesra div, isme bhi wahi kaam hoga -->
+    <div id="divthree">
+        Div three content is here Third,
+        <button onclick="myfun('divthree')">DivThree</button>
+    </div>
+
+    <!-- Yeh button poore page ka content print karega -->
+    <button onclick="mywholepage()">WholePage</button>
+
+    <script>
+        // Function jo poore page ko print karta hai
+        function mywholepage() {
+            window.print(); 
+        }
+
+        // Function jo sirf ek specific div ka content print karta hai
+        function myfun(paravalue) {
+            // Pehle original content ko save kar lete hain
+            var backup = document.body.innerHTML;
+
+            // Jo div print karna hai uska content le lete hain
+            var divcontent = document.getElementById(paravalue).innerHTML;
+
+            // Sirf usi content ko body me daal dete hain temporarily
+            document.body.innerHTML = divcontent;
+
+            // Ab print karte hain
+            window.print();
+
+            // Print ke baad original page ko wapas le aate hain
+            document.body.innerHTML = backup;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-object</title>
+</head>
+<body>
+    <script>
+      var coding = "youtuber";
+      var coding2 = new String("youtuber");
+      document.write(coding == coding2);
+
+      document.write("<br>")
+
+    //   *****************************************
+
+      var coding = "youtuber";
+      var coding2 = new String("youtuber");
+      document.write(coding === coding2);
+
+      document.write("<br>")
+
+    //   *********************************************
+
+        var coding = "youtuber";
+        var coding2 = new String("youtuber");
+        document.write(typeof(coding));
+        document.write("<br>" + typeof(coding2));
+
+        
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-object</title>
+</head>
+<body>
+    <script>
+        // 'coding' ek simple string hai
+        var coding = "youtuber";
+        // 'coding2' ek string object hai (String constructor ka use karke)
+        var coding2 = new String("youtuber");
+
+        // Yeh check kar raha hai ki dono same hai ya nahi (only value compare hoti hai)
+        document.write(coding == coding2); // Output: true
+        document.write("<br>");
+
+    //   *****************************************
+
+        // Ab yeh check kar raha hai ki dono same hai ya nahi, lekin type bhi compare hoga
+        document.write(coding === coding2); // Output: false
+        document.write("<br>");
+
+    //   *********************************************
+
+        // 'typeof' operator se hum type dekhte hain
+        var coding = "youtuber";
+        var coding2 = new String("youtuber");
+        document.write(typeof(coding)); // Output: string
+        document.write("<br>" + typeof(coding2)); // Output: object
+        
+    </script>
+</body>
+</html>

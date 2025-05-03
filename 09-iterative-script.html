@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterative-script</title>
+</head>
+<body>
+    <script>
+        var i = 21;
+        do{
+        document.write(i);
+    i++;
+    document.write("<br>");
+        }while(i<=20)
+
+        document.write("<br>");
+        
+        var a = 1;
+        do {
+            document.write(a + "<br>");
+            a++;
+        } while (a < 21);
+
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterative-script</title>
+</head>
+<body>
+    <script>
+        // 🔁 Pehla do-while loop: i = 21 se start ho raha hai
+        var i = 21;
+
+        do {
+            document.write(i);       // i ki value print karo
+            i++;                     // i me +1 add karo
+            document.write("<br>");  // line break
+        } while (i <= 20);           // Condition galat hai, isliye loop sirf 1 baar chalega
+
+        // 🔍 Note: Do-while loop condition baad me check karta hai,
+        // isliye kam se kam ek baar to chalta hi hai (even if condition false ho).
+
+        document.write("<br>");  // blank line
+
+        // 🔁 Dusra loop: 1 se 20 tak number print karta hai
+        var a = 1;
+
+        do {
+            document.write(a + "<br>"); // current value of a
+            a++;                        // increment
+        } while (a < 21);               // jab tak a 21 se chhota ho
+
+    </script>
+</body>
+</html>

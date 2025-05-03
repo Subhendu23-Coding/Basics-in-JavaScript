@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data-type</title>
+</head>
+<body>
+    <script>
+        var a;
+        document.write(a)
+        document.write("<br>")
+
+        var a = null;
+        var a = "";
+        document.write(a)
+
+
+        var a = "Subhendu Coding \'Codingtech'\ Studay in,... ";
+         document.write(a)
+
+         var b = 864378965;
+         document.write(b)
+         document.write("<br>" + b)
+
+         var boolean = false;
+         document.write(boolean)
+         document.write("<br>" + boolean)
+        
+         document.write("<br>");
+         document.write(typeof(b));
+         
+    </script>
+
+
+<script>
+    // Variable 'a' ko declare kiya, value assign nahi ki — default undefined milegi
+    var a;
+    document.write(a) // Output: undefined
+    document.write("<br>")
+
+    // Ab 'a' ko null assign kiya, phir usi 'a' ko empty string (""), to latest value "" hogi
+    var a = null;
+    var a = "";
+    document.write(a) // Output: (kuch bhi nahi dikhai dega kyunki empty string hai)
+
+    // Ab 'a' ko ek string assign kiya
+    var a = "Subhendu Coding \'Codingtech'\ Studay in,... ";
+    document.write(a) // Output: Subhendu Coding 'Codingtech'\ Studay in,...
+
+    // Ek naya number variable 'b' banaya
+    var b = 864378965;
+    document.write(b) // Output: 864378965
+    document.write("<br>" + b) // Output: line break ke baad same number
+
+    // Boolean variable banaya — false assign kiya
+    var boolean = false;
+    document.write(boolean) // Output: false
+    document.write("<br>" + boolean) // Output: line break ke baad false
+
+    // Line break aur phir 'b' ka type print karwaya — number
+    document.write("<br>");
+    document.write(typeof(b)); // Output: number
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        var n = d.getTime();
+
+        var hour = d.getHours();
+        var minute = d.getMinutes();
+        var second = d.getSeconds();
+
+        document.write(hour+ ": "+minute+":"+second);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+<body>
+    <script>
+        // Ek new Date object banate hain jo current date and time deta hai
+        var d = new Date();
+
+        // Milliseconds nikalte hain (Jan 1, 1970 se lekar ab tak)
+        var n = d.getTime();
+
+        // Current hour (ghante) nikalte hain
+        var hour = d.getHours();
+
+        // Current minute (minute) nikalte hain
+        var minute = d.getMinutes();
+
+        // Current second (second) nikalte hain
+        var second = d.getSeconds();
+
+        // Final output screen pe dikhate hain
+        document.write(hour + ": " + minute + ":" + second);
+    </script>
+</body>
+</html>

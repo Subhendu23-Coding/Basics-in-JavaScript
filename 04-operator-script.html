@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <script>
+        var a = 20;           // a = 20
+        var b = 80;           // b = 80
+
+        var sum = a + b;      // sum = 100     ✅ Overwritten later
+        var sum = a + 50;     // sum = 70      ✅ Overwritten later
+        var sum = a - 30;     // sum = -10     ✅ Overwritten later
+        var sum = a * 40;     // sum = 800     ✅ Overwritten later
+        var sum = a % 60;     // sum = 20      ✅ FINAL value used
+
+        document.write(sum); 
+
+        document.write("<br>")
+        var youtube = "Coding";      
+        var name = "Subhendu";
+        document.write(youtube + " " + name);
+
+        var number = 5;
+        // number = number + 5;
+        // number += 20;
+        // number -= 20;
+        // number  %= 20;
+        number *= 20;
+
+        document.write("<br>")
+        document.write(number);
+
+
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <script>
+        // Do variable banaye: a = 20, b = 80
+        var a = 20;           
+        var b = 80;           
+
+        // Niche same variable 'sum' ko baar-baar overwrite kiya gaya hai:
+        var sum = a + b;      // Pehle sum = 100
+        var sum = a + 50;     // Ab sum = 70
+        var sum = a - 30;     // Ab sum = -10
+        var sum = a * 40;     // Ab sum = 800
+        var sum = a % 60;     // FINAL: sum = 20 (20 % 60 = 20)
+
+        // Sirf last value hi output hogi: 20
+        document.write(sum); 
+
+        document.write("<br>"); // New line
+
+        // String concatenate kar rahe hain (text jodna)
+        var youtube = "Coding";      
+        var name = "Subhendu";
+        document.write(youtube + " " + name); // Output: Coding Subhendu
+
+        // Ab ek number variable le rahe hain
+        var number = 5;
+
+        // Yeh niche wale examples assignment operators ke hain:
+        // number = number + 5;
+        // number += 20;
+        // number -= 20;
+        // number %= 20;
+
+        // Currently active line: number *= 20 → 5 * 20 = 100
+        number *= 20;
+
+        document.write("<br>");
+        document.write(number); // Output: 100
+
+    </script>
+</body>
+</html>

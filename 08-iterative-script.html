@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterative</title>
+</head>
+<body>
+    <script>
+        var i = 1;
+        while(i<=100){
+            document.write(i);
+            i++
+            document.write("<br>");
+        }
+
+
+        document.write("<br>");
+
+        var i = 2;
+        var j = 1;
+        while(i<=20){
+            document.write("2" + "*" + "j" + " = " +i);
+            i++
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterative</title>
+</head>
+<body>
+    <script>
+        // ✅ Pehla loop: 1 se 100 tak number print karega
+        var i = 1;
+
+        while (i <= 100) {
+            document.write(i);         // Current number print karo
+            i++;                       // i ka value 1 se badhate raho
+            document.write("<br>");    // Line break
+        }
+
+        document.write("<br>"); // Ek extra line gap
+
+        // ✅ Doosra loop: 2 ka table print karne ke liye
+        var j = 1;
+
+        while (j <= 10) {
+            var result = 2 * j;
+            document.write("2 * " + j + " = " + result);
+            document.write("<br>");
+            j++; // j ka value badhao
+        }
+    </script>
+</body>
+</html>

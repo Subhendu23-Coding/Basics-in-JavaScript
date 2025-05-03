@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        var b = "1";
+        document.write(a)
+        document.write("<br>")
+        document.write(b)
+        document.write("<br>")
+        if (a == b) {
+            document.write("Both are equal");
+        }else{
+            document.write("Both are Not equal");
+        }
+
+        document.write("<br>")
+
+
+
+        var a = 1;
+        var b = "1";
+        document.write(a)
+        document.write("<br>")
+        document.write(b)
+        document.write("<br>")
+        if (a === b) {
+            document.write("Both are equal");
+        }else{
+            document.write("Both are Not equal");
+        }
+
+        document.write("<br>");
+
+
+        var a = 1;
+        var b = 10;
+        var c = 5;
+        var sum = a + b;
+        // var c = c + sum; 
+        c += sum;
+        // c -= sum;
+        // c %= sum; 
+        // c *= sum;   
+        document.write(sum);
+        document.write("<br>");
+        document.write(c);
+
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison</title>
+</head>
+<body>
+    <script>
+        // Pehla example: loose equality (==) ka use
+        var a = 1;
+        var b = "1";
+
+        document.write(a); // Output: 1
+        document.write("<br>");
+        document.write(b); // Output: "1" (string)
+        document.write("<br>");
+
+        // == sirf value check karta hai, type ignore karta hai
+        if (a == b) {
+            document.write("Both are equal");
+        } else {
+            document.write("Both are Not equal");
+        }
+
+        document.write("<br>");
+
+        // Dusra example: strict equality (===) ka use
+        var a = 1;
+        var b = "1";
+
+        document.write(a); // Output: 1
+        document.write("<br>");
+        document.write(b); // Output: "1"
+        document.write("<br>");
+
+        // === value aur type dono check karta hai
+        if (a === b) {
+            document.write("Both are equal");
+        } else {
+            document.write("Both are Not equal");
+        }
+
+        document.write("<br>");
+
+        // Teesra example: assignment operators ka use
+        var a = 1;
+        var b = 10;
+        var c = 5;
+
+        var sum = a + b; // sum = 1 + 10 = 11
+
+        // Assignment operator: c = c + sum → c += sum → 5 + 11 = 16
+        c += sum;
+
+        // Aap yeh bhi try kar sakte ho:
+        // c -= sum;
+        // c *= sum;
+        // c %= sum;
+
+        document.write(sum); // Output: 11
+        document.write("<br>");
+        document.write(c);   // Output: 16
+    </script>
+</body>
+</html>
