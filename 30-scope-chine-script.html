@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope chine </title>
+</head>
+<body>
+    <script>
+        document.body.style.textAlign = "center";
+        var x = 0;
+        var y1 = 'Wellcome to my Codding';
+        console.log(x);
+        document.write(x);
+        f1();
+        function f1(){
+            var localvarf1 = 'Subscribe to my coding';
+            var y2 = ' chack this out y2 inside f1()';
+            document.write(x);
+                console.log(x);             
+            f2();
+            function f2(){
+                var localvarf2 = 'Subscribe to my coding and like';
+                var y3 = ' chack this out y3 inside f1()';
+                document.write(x);
+                 console.log(x);
+
+                 f3();
+                 function f3(){
+                    var localvarf3 = 'shere this video';
+                    var y4 = 'chack this out y4 inside f2()';
+                    document.write(x + "<hr>");
+                    console.log(x);
+                    
+
+
+                    document.write(y4 + "<hr>");
+                    document.write(y3 + "<hr>");
+                    document.write(y2 + "<hr>");
+                    document.write(y1 + "<hr>");
+
+                    // Console output for debugging
+                    console.log("y4 =", y4);
+                    console.log("y3 =", y3);
+                    console.log("y2 =", y2);
+                    console.log("y1 =", y1);
+
+
+                 }
+                 
+            }
+        }
+    </script>
+</body>
+</html>

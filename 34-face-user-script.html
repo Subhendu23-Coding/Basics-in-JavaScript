@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook User</title>
+</head>
+<body>
+    <script>
+        let database = [
+            {
+                username: 'subho',
+                password: 'majhi',
+            }
+        ];
+
+        // let status = [
+        //     {
+        //         name: 'Subhenducode',
+        //         status: 'I want to 50K Subscriber',
+        //     },
+        //     {
+        //         name: 'Google',
+        //         status: 'I will help Subhenducode to get 50K Subscriber',
+        //     }
+        // ];
+
+        const username = prompt('Enter Your Username');
+        const password = prompt('Enter Your Password');
+
+        const login = (user, pass) => {
+            if (user === database[0].username && pass === database[0].password) {
+                console.log(alert("Wellcome Login Successful")); 
+                // status.forEach(post => console.log(post));
+            } else {
+                console.log(alert("Incorrect Username or Password"));
+            }
+        }
+
+        login(username, password);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String Real-Time</title>
+</head>
+<body>
+    <h2 style="text-align: center; color: red;">Reverse The String in Real Time with Decrementing for loop</h2>
+    <br>
+    <!-- Input field for typing text -->
+    <input type="text" name="" id="reversThename" onkeyup="reverseString()">
+    <input type="text" name="" id="showData" readonly> <!-- Read-only field to display reversed string -->
+
+    <script>
+        function reverseString() {
+            var str = document.getElementById('reversThename').value; // Get the input string
+            var newString = ""; // Initialize an empty string to build the reversed string
+
+            // Loop through the string in reverse order (from end to start)
+            for (var i = str.length - 1; i >= 0; i--) {
+                newString += str[i]; // Add each character to the newString
+            }
+
+            // Set the reversed string to the output field
+            document.getElementById('showData').value = newString;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veriable</title>
+</head>
+<body>
+    <script>
+      
+        function sum(a , b){
+            add = a+b;
+            console.log(add);
+            // document.write(add);
+        }
+
+        sum(5, 10);
+
+
+        //variable/function hoisting 
+
+
+        var a = 10;
+        console.log(a);
+        
+        
+        // console.log("I am a" + Job);
+        var job = "Web Devloper";
+        console.log("I am a" + job);
+
+        function whoAmI(){
+            console.log("I am a" + job);
+            var job = "Full Stack Devloper";
+            console.log("I am a"+ job); 
+        }
+        whoAmI();
+        
+    </script>
+</body>
+</html>
