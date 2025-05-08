@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = a;
+
+        b = b + 5;
+
+        console.log(a);
+        console.log(b);
+
+        const obj1 = {
+            user : "subho",
+            password : "pass",
+        }
+
+        const obj2 = obj1;
+        obj2.password = "majhi";
+        
+        console.log(obj1);
+        console.log(obj2);
+
+        const arr1 = [1, 2, 3, 4];
+        const arr2 = [].concat(arr1);
+        arr2.push(5);
+
+        console.log(arr1); // [1, 2, 3, 4]
+        console.log(arr2); // [1, 2, 3, 4, 5]
+
+        
+        
+    </script>
+</body>
+</html>

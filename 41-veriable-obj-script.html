@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function sum(){
+        var add = 2+2;
+        console.log("sum of two no.is = "+add);
+        console.log(this);
+    }
+    sum();
+
+//////////////////////////////////////
+
+const subho = {
+    name : "code subho",
+    qualif: "MVP",
+    sum: function(){
+        var add = 2+2;
+        console.log("sum of two no. is = " +add);
+        console.log(this);   
+        console.log(this.name);   
+    }
+}
+
+subho.sum();
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

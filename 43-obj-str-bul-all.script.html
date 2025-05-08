@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const youtube = {
+            name : "Subhendu Majhi",
+            sube : "77k",
+        }
+
+        // Corrected this line
+        youtube.prof = "Web Developer";
+
+        // Accessing the new property
+        console.log(youtube.prof); // Output: Web Developer
+
+        // typeof checks
+        console.log(typeof({}));              // object
+        console.log(typeof([]));              // object (arrays are technically objects)
+        console.log(typeof(function() {}));   // function
+
+        // Arrow function
+        const check = () => {
+            console.log("checking");
+        }
+
+        // Adding a custom property to a function (possible in JavaScript)
+        check.letfun = "All right, I am Subhendu Majhi Matal";
+
+        console.log(check.letfun); // Output: All right, I am Subhendu Majhi Matal
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-global</title>
+</head>
+<body>
+    <script>
+        const subho = {
+            name: "coding subho",
+            qualif: "MVP",
+            sum: function () {
+                console.log(this.name); // 'coding subho'
+                
+                var add = 3 + 4;
+                console.log("sum of two no. is = " + add); // 7
+                console.log(this); // refers to the subho object
+    
+                function child() {
+                    var name = "subho";
+                    console.log("child method name = " + name); // 'subho'
+                    console.log(this); // refers to the global object (window in browsers), not subho
+                }
+    
+                child(); // Call the child function
+            }
+        }
+    
+        subho.sum(); // Don't forget to call the method!
+    </script>
+    
+</body>
+</html>
